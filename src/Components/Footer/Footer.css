@@ -1,0 +1,156 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background:linear-gradient(180deg, #e1ffea22, #47fdae  60%);
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+hr {
+     width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-icon-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 2px solid #ebebeb;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+     width: 100%;
+     margin-bottom: 30px;
+     color: #1a1a1a;
+     font-size: 20px;
+
+}
+
+.footer-copyright hr {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-links {
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .footer-logo p {
+    font-size: 32px;
+  }
+
+  .footer-social-icon {
+    gap: 25px;
+  }
+
+  .footer-icon-container {
+    padding: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    font-size: 28px;
+  }
+
+  .footer-social-icon {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer-copyright hr {
+    height: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .footer-logo p {
+    font-size: 24px;
+  }
+
+  .footer-links {
+    font-size: 15px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-icon-container {
+    padding: 6px;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+    gap: 20px;
+  }
+}

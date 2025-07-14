@@ -1,0 +1,195 @@
+.navbar {
+  display: flex;
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  justify-content: space-around;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-logo p {
+  color: #171717;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  color: #626262;
+  list-style: none;
+  gap: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.nav-link {
+  text-decoration: none;
+  color: #626262;
+}
+
+.nav-link:hover {
+    color: #454444;
+}
+
+.nav-link:active {
+    color: #970f0f;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #ff4141;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-cart button {
+  width: 140px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: #ff4141;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background: #e61010;
+}
+
+.nav-login-cart button:active {
+  background: #ed7373;
+}
+
+
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-cart-count:hover {
+  background: #e61010;
+}
+
+.nav-cart-count:active {
+  background: #ed7373;
+}
+
+/*  Flick animation on cart icon */
+
+.nav-login-cart .cart_icon {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.nav-login-cart .cart_icon:active {
+  animation: flicker 0.3s ease;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ---------------------------- */
+/*  Responsive Media Queries */
+/* ---------------------------- */
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    gap: 30px;
+    font-size: 16px;
+  }
+
+  .nav-login-cart {
+    gap: 30px;
+  }
+
+  .nav-login-cart button {
+    width: 120px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-login-cart {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo p {
+    font-size: 22px;
+  }
+
+  .nav-menu {
+    font-size: 15px;
+    gap: 15px;
+  }
+
+  .nav-login-cart button {
+    width: 100%;
+    max-width: 160px;
+    font-size: 14px;
+  }
+
+  .nav-cart-count {
+    margin-top: -25px;
+    margin-left: -40px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+}
